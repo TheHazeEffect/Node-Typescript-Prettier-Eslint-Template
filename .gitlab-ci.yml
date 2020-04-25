@@ -1,15 +1,9 @@
 image: node:10.16.1
 
-
-stages: 
+stages:
     - lint
 
 lint-check:
-
     stage: lint
     script:
-        - tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet
-
-    
-
-    
+        - tsc --noEmit && eslint */**/*.{js,ts,tsx} --quiet
