@@ -6,4 +6,5 @@ stages:
 lint-check:
     stage: lint
     script:
+        - yarn global add typescript
         - yarn lint
