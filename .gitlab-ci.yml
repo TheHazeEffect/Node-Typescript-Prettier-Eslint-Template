@@ -6,4 +6,4 @@ stages:
 lint-check:
     stage: lint
     script:
-        - tsc --noEmit && eslint */**/*.{js,ts,tsx} --quiet
+        - yarn lint
